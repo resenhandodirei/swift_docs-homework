@@ -65,6 +65,129 @@
 
 - Extensões adicionam nova funcionalidade a uma classe, estrutura, enumeração ou tipo de protocolo existente.
 
+### Funções: 
+- Use func para declarar uma função. 
+
+- Chame uma função seguindo seu nome com uma lista de argumentos entre parentereses. 
+
+- Use -> para separar os nomes e tipos de parâmetros do tipo de retorno da função. 
+
+### Classes: 
+
+- Para criar uma classe use class seguido pelo seu nome. 
+
+- Propriedades em uma classe são escritas da mesma forma que uma constante ou variável. 
+
+- É uma abstração de um tipo de dado.
+
+- Uma descrição que abstrai um conjunto de objetos com características e comportamentos. 
+
+- Atributos definem dados ou características, métodos definem seu comportamento. 
+
+#### Objetos
+
+- Objetos são instâncias de uma classe. 
+
+- Uma realização concreta e particular da mesma. 
+
+
+
+### Enuns: 
+
+- Para criar uma enumeração use enum. 
+
+- Assim como as classes, as enumerações podem ter métodos associados a elas. 
+
+### Structs: 
+
+- Para criar uma estrutura use struct. 
+
+- Structs suportam muitos dos mesmos comportamentos que as classes, incluindo métodos e inicializadores.
+
+### Propriedades: 
+
+- Propriedades de uma classe são atributos comuns que podem ser comportamennto em cada objeto derivado dela. 
+
+- As propriedades descrevem as características do objeto. 
+
+### Métodos: 
+
+- Os métodos são comportamentos ou ações que você pede para o objeto executar. 
+
+### Inicializadores: 
+
+- É uma atribuição de um valor inicial para um objeto. 
+
+- É um tipo especial de função que é usado para criar um objeto de uma classe. 
+
+### Encapsulamento: 
+
+- Oculta as características e as ações de um objeto. 
+
+- Define as informações visíveis apenas para o próprio objeto. 
+
+### Abstração: 
+
+- É um conceito pelo qual expomos dados e métodos relevantes de um objeto ocultando sua implementação interna. 
+
+### Controle de acessos: 
+
+| Código | Explicação |
+| ----- | --------|
+| open | menos restrito |
+| public | semelhante ao open, porém com algumas diferenças. |
+| internal | permite o acesso de qualquer lugar no módulo, mas não fora dele. |
+| file-private | permite o uso dentro do arquivo. |
+| private | nível mais restritivo de todos. |
+
+
+### Herança: 
+
+Pessoa -> Super classe. 
+
+Funcionário: -> subclasses
+- Secretária
+- Gerente 
+- Vendedor 
+
+### Sobrecarga de métodos:
+
+É o processo pelo qual uma classe possui dois ou mais métodos com o mesmo nome, mas com parâmetros diferentes. 
+
+### Substituição de métodos: 
+
+- É o processo pelo qual dois métodos têm o mesmo nome e parâmetros. 
+
+- Um dos métodos está na classe pai e o outro está na classe filha. 
+
+### Polimorfismo: 
+
+Objetos da mesma classe podem se comportar de forma independente dentro de uma mesma interface. 
+
+### Concorrências: 
+
+- O aplicativo está executando mais de uma tarefa ao mesmo tempo, simultaneamente. 
+
+- Mais de um thread em execução. 
+
+### Async/Await: 
+
+- Simplifica o código. 
+
+- Disponível a partir do Swift 5.5.
+
+### Protocols:
+
+Define um esquema de métodos, propriedades e outros requisitos que atendeme a uma determinada tarefa ou funcionalidade. 
+
+### Extensions: 
+
+Adiciona novas funcionalidades em uma classe, estrutura, enumeração ou tipo de protocolo existente. 
+
+
+
+
+
 ### Error Handling: 
 É o processo de responder e se recuperar de condições de erro em seu programa. 
 O Swift fornece suporte de primeira classe para lançar, capturar, propagar e manipular erros recuperáveis em tempo de execução.
@@ -87,6 +210,32 @@ Classes são reference types e Structs são value types.
 ## Tuplas
 
 ## Optionals
+
+### Optional Chaining: 
+
+- O encadeamento opcional é um processo para consultar e chamar propriedades, métodos e subscripts em um opcional que pode ser nulo. 
+
+## Controle de fluxo: 
+- Use if e switch para fazer condicionais. 
+
+- Use for-in, while e repeat-while para fazer loops. 
+
+## Tipos de coleção:
+
+- O Swift fornece três tipos de coleção principais, arrays, sets e dictionaries. 
+
+- Arrays são coleções ordenadas de valores. 
+
+- Sets são coleções não ordenadas de valores únicos. 
+
+- Dictionaries são coleções não ordenadas de associações de valores-chave. 
+
+## Mutability Collections: 
+
+- Array, set ou dictionary criado como variável será mutável. 
+
+- Array, set ou dictionary criado como constante será imutável. 
+
 
 # Estruturas de dados:
 | Código | Explicação |
@@ -225,11 +374,6 @@ Uma árvore binária T é um conjunto (finito) de nós, tal que:
 
 - A altura da árvore vazia é -1. 
 
-# Detalhes importantes 
-
-- Não é necessário o uso de ponto e vírgula, sendo necessário apenas para a continuidade do código na mesma linha. 
-
-
 # Curiosidades: 
 
 - Swift Playgrounds: app para iPad e Mac para deixar aprendizado do Swift mais divertido. Não exige conhecimento de programação. Vem com lista completa de lições criadas pela Apple. 
@@ -237,4 +381,12 @@ Uma árvore binária T é um conjunto (finito) de nós, tal que:
 - Linguagem type-safe por ser segura para executar o código e fazer verificações de tipo ao compilar seu código e sinaliza quaisquer tipos incompatíveis. Isso não significa que precisa especificar o tipo de cada constante e variável que você declara.
 
 - Criada a partir de uma mistura de antigos conceitos de programação, como POO, PF e POP.
+
+- Não é necessário o uso de ponto e vírgula, sendo necessário apenas para a continuidade do código na mesma linha. 
+
+
+
+
+
+
 
