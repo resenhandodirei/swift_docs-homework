@@ -35,6 +35,41 @@
 
 - Sempre bom evitar dar um nome a uma palavra reservada. Avalie outras opções. 
 
+# Concatenção
+
+| Código | Explicação |
+| ----- | --------|
+| + | Você pode usar o operador + para concatenar duas ou mais strings |
+| += | Se você quiser adicionar uma string a uma string existente, pode usar o operador += | 
+| \() | String Interpolation | 
+| String inicializador | 
+| append | |
+| String(describing:) | |
+
+
+#### Exemplos de Estruturas Condicionais em Swift
+
+| Estrutura | Explicação |
+| --------- | ----------- |
+| `if temperature > 30` | Executa um bloco de código se a condição for verdadeira. |
+| `else if temperature < 10` | Executa um bloco de código se a condição anterior for falsa e esta condição for verdadeira. |
+| `else` | Executa um bloco de código se todas as condições anteriores forem falsas. |
+| `switch dayOfWeek` | Avalia um valor e executa o bloco de código correspondente ao caso correspondente. |
+| `default` | Caso padrão que é executado se nenhum dos casos anteriores corresponder. |
+| `let canVote = age >= 18 ? "Você pode votar." : "Você não pode votar."` | Operador ternário para decisões condicionais simples. |
+
+
+#### Exemplos de Estruturas de Repetição em Swift
+
+| Estrutura | Explicação |
+| --------- | ----------- |
+| `for i in 1...5` | Loop `for-in` iterando sobre uma faixa de números. |
+| `for fruit in fruits` | Loop `for-in` iterando sobre um array. |
+| `for (name, age) in ages` | Loop `for-in` iterando sobre um dicionário. |
+| `while counter < 5` | Loop `while` que executa um bloco de código enquanto a condição é verdadeira. |
+| `repeat { ... } while counter < 5` | Loop `repeat-while` que executa um bloco de código pelo menos uma vez antes de verificar a condição. |
+
+
 # Tipos de Dados:
 
 - O Swift fornece tipos inteiros assinados e não assinados em formatos de 8, 16, 32 e 64 bits. Pode acessar valores mínimo e máximo de cada tipo inteiro com suas propriedades min e max. 
@@ -72,6 +107,22 @@
 
 - Use -> para separar os nomes e tipos de parâmetros do tipo de retorno da função. 
 
+#### Exemplos de Funções em Swift
+
+
+| Função | Explicação |
+| ------ | ----------- |
+| `greet()` | Função simples que não aceita parâmetros e não retorna valor. |
+| `greet(person: String)` | Função que aceita parâmetros. |
+| `add(a: Int, b: Int) -> Int` | Função que retorna um valor. |
+| `greet(person: String?) -> String` | Função com parâmetros e valores de retorno opcionais. |
+| `greet(person: String = "Mundo")` | Função com parâmetros padrão. |
+| `minMax(array: [Int]) -> (min: Int, max: Int)?` | Função que retorna múltiplos valores usando tuplas. |
+| `chooseStepFunction(backward: Bool) -> (Int) -> Int` | Funções aninhadas. |
+| `applyOperation(_ a: Int, _ b: Int, operation: (Int, Int) -> Int) -> Int` | Funções de ordem superior que aceitam outras funções como parâmetros ou retornam funções. |
+
+
+
 ### Classes: 
 
 - Para criar uma classe use class seguido pelo seu nome. 
@@ -89,6 +140,28 @@
 - Objetos são instâncias de uma classe. 
 
 - Uma realização concreta e particular da mesma. 
+
+#### Exemplos de Classe e Objeto em Swift
+
+| Função/Classe | Explicação |
+| ------------- | ----------- |
+| `class Person` | Definição de uma classe que possui propriedades e métodos. |
+| `init(name: String, age: Int)` | Inicializador para a classe `Person`, que define as propriedades `name` e `age`. |
+| `func greet()` | Método que imprime uma saudação com o nome e idade da pessoa. |
+| `let person = Person(name: "Alice", age: 30)` | Criação de um objeto (instância) da classe `Person`. |
+| `class Car` | Definição de uma classe com propriedades. |
+| `init(color: String)` | Inicializador para a classe `Car`, que define a propriedade `color`. |
+| `class Rectangle` | Definição de uma classe com um método que calcula a área. |
+| `init(width: Double, height: Double)` | Inicializador para a classe `Rectangle`, que define as propriedades `width` e `height`. |
+| `func area() -> Double` | Método que retorna a área do retângulo. |
+| `class Animal` | Definição de uma classe base para herança. |
+| `init(name: String)` | Inicializador para a classe `Animal`, que define a propriedade `name`. |
+| `func makeSound()` | Método que imprime um som genérico do animal. |
+| `class Dog: Animal` | Definição de uma subclasse que herda de `Animal`. |
+| `override func makeSound()` | Método sobrescrito que imprime um som específico do cachorro. |
+| `class Example` | Definição de uma classe com controle de acesso `private`. |
+| `private var secret` | Propriedade privada da classe `Example`. |
+| `func revealSecret() -> String` | Método que retorna o valor da propriedade privada `secret`. |
 
 
 
@@ -129,6 +202,24 @@
 ### Abstração: 
 
 - É um conceito pelo qual expomos dados e métodos relevantes de um objeto ocultando sua implementação interna. 
+
+#### Exemplos 
+
+| Conceito | Explicação |
+| -------- | ----------- |
+| `enum CompassPoint` | Enumeração que define um grupo de valores relacionados. |
+| `struct Person` | Struct que agrupa valores relacionados e métodos. |
+| `var radius: Double` | Propriedade armazenada de uma classe. |
+| `var area: Double` | Propriedade calculada de uma classe. |
+| `func greet()` | Método de uma struct. |
+| `class Example` | Classe que demonstra encapsulamento. |
+| `private var secret` | Propriedade privada, exemplo de encapsulamento. |
+| `func revealSecret() -> String` | Método que acessa uma propriedade privada. |
+| `init(name: String, age: Int)` | Inicializador de uma classe. |
+| `protocol Shape` | Protocolo que define uma interface para abstração. |
+| `class Circle: Shape` | Classe que implementa um protocolo, exemplo de abstração. |
+| `func area() -> Double` | Método que calcula a área de uma forma geométrica. |
+
 
 ### Controle de acessos: 
 
@@ -185,6 +276,18 @@ Define um esquema de métodos, propriedades e outros requisitos que atendeme a u
 Adiciona novas funcionalidades em uma classe, estrutura, enumeração ou tipo de protocolo existente. 
 
 
+#### Exemplos
+
+| Conceito | Explicação |
+| -------- | ----------- |
+| `protocol Describable` | Protocolo que define um modelo de métodos e propriedades. |
+| `class Person: Describable` | Classe que adota e implementa o protocolo `Describable`. |
+| `func describe() -> String` | Método que implementa o requisito do protocolo. |
+| `import SwiftUI` | Importa a framework SwiftUI para construção de interfaces de usuário. |
+| `struct ContentView: View` | Estrutura que define uma view em SwiftUI. |
+| `var body: some View` | Propriedade obrigatória que descreve o conteúdo e layout da view. |
+| `@State private var count` | Propriedade de estado que permite que SwiftUI rastreie e atualize mudanças. |
+| `Button(action: { count += 1 })` | Botão que incrementa o valor de `count` quando pressionado. |
 
 
 
@@ -383,10 +486,3 @@ Uma árvore binária T é um conjunto (finito) de nós, tal que:
 - Criada a partir de uma mistura de antigos conceitos de programação, como POO, PF e POP.
 
 - Não é necessário o uso de ponto e vírgula, sendo necessário apenas para a continuidade do código na mesma linha. 
-
-
-
-
-
-
-
