@@ -99,7 +99,7 @@ top(): Observa o topo
 | ----- | --------|
 | push() | insere um elemento no topo |
 | pop() | retira um elemento do topo |
-| top() | observa o topo |
+| top() | observa o topo e retorna o último elemento da pilha |
 
 Em uma pilha “ideal”, operações básicas devem ocorrer em O(1), independentemente do tamanho N da pilha (ou seja, em tempo constante).
 
