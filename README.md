@@ -1,4 +1,5 @@
 
+
 # O que é o Swift?
 
 - Linguagem de programação criada pela Apple para desenvolvimento de aplicativos iOS. 
@@ -45,6 +46,37 @@
 | Float | números de ponto flutuante de apenas 6 dígitos decimais |
 | Aliases | define um nome alternativo para um tipo existente |
 | Bolean | false or true |
+
+# Conceitos importantes:
+
+- Funções são conjuntos de instruções que serão executados na hora da sua chamada ou execução.
+
+- Closure é um bloco de funcionalidade que pode ser passado durante seu código. Pode ser passado uma closure como um argumento de uma função ou armazená-la como uma propriedade de um objeto.
+
+- Classe representa um conjunto de objetos com características similares. Define o comportamento dos objetos, através de métodos e atributos.
+
+- Objeto é uma instância de uma classe.
+
+- Enum define um tipo comum para um grupo de valores relacionados.
+
+- Struct é um bloco que armazenam diversas informações. Pode deixar o código mais rápido, seguro, flexível e reutilizável.
+
+- Protocolo define um esquema de métodos, propriedades e outros requisitos que se adequam a uma tarefa ou funcionalidade específica.
+
+- Extensões adicionam nova funcionalidade a uma classe, estrutura, enumeração ou tipo de protocolo existente.
+
+### Error Handling: 
+É o processo de responder e se recuperar de condições de erro em seu programa. 
+O Swift fornece suporte de primeira classe para lançar, capturar, propagar e manipular erros recuperáveis em tempo de execução.
+
+### Generics: 
+Generics permite que você escreva funções e tipos flexíveis e reutilizáveis que podem funcionar com qualquer tipo, sujeito aos requisitos que você definir. Você pode escrever código que evite duplicação e expresse sua intenção de maneira clara e abstrata.
+
+
+### Diferença entre Struct e Class: 
+
+Classes são reference types e Structs são value types.
+
 
 # Tuplas e Optionals: 
 
@@ -205,9 +237,4 @@ Uma árvore binária T é um conjunto (finito) de nós, tal que:
 - Linguagem type-safe por ser segura para executar o código e fazer verificações de tipo ao compilar seu código e sinaliza quaisquer tipos incompatíveis. Isso não significa que precisa especificar o tipo de cada constante e variável que você declara.
 
 - Criada a partir de uma mistura de antigos conceitos de programação, como POO, PF e POP.
-
-
-
-
-
 
