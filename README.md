@@ -82,6 +82,18 @@
 | Aliases | define um nome alternativo para um tipo existente |
 | Bolean | false or true |
 
+# Tratameno de dados: 
+## Arrays
+
+## Dicionários
+## Conjuntos 
+
+## Map
+
+## Filter
+## Reduce
+
+
 # Conceitos importantes:
 
 - Funções são conjuntos de instruções que serão executados na hora da sua chamada ou execução.
@@ -105,10 +117,57 @@
 
 - Chame uma função seguindo seu nome com uma lista de argumentos entre parentereses. 
 
-- Use -> para separar os nomes e tipos de parâmetros do tipo de retorno da função. 
+- Use -> para separar os nomes e tipos de parâmetros do tipo de retorno da função.
+
+
+### Função sem parâmetros e sem retorno
+
+### Função com parâmetros 
+
+### Função com parâmetros e com retorno
+
+### Função com parâmetros com nome externo
+
+### Função com parâmetros sem norme externo (usando underscore `_`)
+
+### Função com valores padrões para parâmetros
+
+### Funções aninhadas
+
+### Funções como tipo
+
+### Funções como parâmetros
+
+#### Funções como parâmetros e retorno passando funções como parâmetros
+
+### Funções com múltiplos valores de retorno (tuplas)
+
+#### Funções como parâmetros e retorno com funções podendo retornar outras funções
+
+### Funções como closures
+#### Sintaxe de closure
+
+### Sintaxe reduzida
+
+### Funções genéricas
+
+### Funções genéricas
+
+### Funções captura de valores em closures 
+
+### Funções de ordem superior
+
+### Funções variádicas
+
+### Funções curried
+
+### Funções assíncronas e await
+
+### Funções como propriedades
+
+### Funções autoclosures
 
 #### Exemplos de Funções em Swift
-
 
 | Função | Explicação |
 | ------ | ----------- |
@@ -476,6 +535,12 @@ Uma árvore binária T é um conjunto (finito) de nós, tal que:
 - A altura de uma árvore é a altura da raiz. 
 
 - A altura da árvore vazia é -1.
+
+## Programação Orientada a Objetos (POO): 
+
+## Tratamento de exceções
+
+## Gerenciamento de Memória
 
 # Boas práticas
 
