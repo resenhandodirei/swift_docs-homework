@@ -475,7 +475,9 @@ Uma árvore binária T é um conjunto (finito) de nós, tal que:
 
 - A altura de uma árvore é a altura da raiz. 
 
-- A altura da árvore vazia é -1. 
+- A altura da árvore vazia é -1.
+
+# Boas práticas
 
 # Curiosidades: 
 
