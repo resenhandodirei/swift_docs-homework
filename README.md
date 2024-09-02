@@ -544,7 +544,13 @@ Uma árvore binária T é um conjunto (finito) de nós, tal que:
 
 # Boas práticas
 
-# Curiosidades: 
+# Erros comuns e possivelmente frequentes: 
+| Mensagens de erro | Explicação |
+| ----- | --------|
+| `Closure containing a declaration cannot be used with result builder 'ViewBuilder'` | Ocorre porque você tem funções declaradas dentro do body da View ExpensesView. No SwiftUI, as funções internas com declarações de variáveis não podem ser usadas dentro do ViewBuilder.|
+
+
+# Curiosidades
 
 - Swift Playgrounds: app para iPad e Mac para deixar aprendizado do Swift mais divertido. Não exige conhecimento de programação. Vem com lista completa de lições criadas pela Apple. 
 
