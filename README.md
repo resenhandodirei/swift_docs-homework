@@ -546,7 +546,7 @@ Uma árvore binária T é um conjunto (finito) de nós, tal que:
 
 # Erros comuns e possivelmente frequentes: 
 | Mensagens de erro | Explicação | Recomendação para resolução |
-| ----- | --------|
+| ----- | --------| ------- |
 | `Closure containing a declaration cannot be used with result builder 'ViewBuilder'` | Ocorre porque você tem funções declaradas dentro do body da View ExpensesView. No SwiftUI, as funções internas com declarações de variáveis não podem ser usadas dentro do ViewBuilder.| Pode mover o código da função filterExpenses para fora da closure do ViewBuilder, deixando apenas a chamada da função dentro da closure. |
 |`The compiler is unable to type-check this expression in reasonable time`| Pode ocorrer quando o compilador do Swift não consegue processar uma expressão complexa dentro de um tempo aceitável. Isso pode ser causado por expressões longas ou pelo uso de estruturas de dados e métodos que exigem uma verificação de tipos mais demorada. | É recomendável dividir o código em partes menores e mais gerenciáveis, ajudando o compilador a processar o código mais facilmente. |
 
