@@ -126,6 +126,13 @@
 
 ### Função com parâmetros e com retorno
 
+- A função print aceita até até 3 parâmetros.
+  a) items - values inside the double quotation
+  
+  b) separator (optional) - allows us to separate multiple items inside print().
+  
+  c) terminator (optional) - allows us to add add specific values like new line "\n", tab "\t"
+
 ### Função com parâmetros com nome externo
 
 ### Função com parâmetros sem norme externo (usando underscore `_`)
@@ -371,11 +378,36 @@ Classes são reference types e Structs são value types.
 
 ## Tuplas
 
-## Optionals
+## Optionals:
+São variáveis em Swift que não necessariamente tenham um valor definido(ou seja, nulo). Definimos uma variável como opcional colocando uma interrogação após a definição do seu tipo. Podem ser: 
+- Usando o force unwrapping, com !
+- Usando binding opcional, com if let
+- Usando o unwrapping implícito de opcionais, com !
+- Usando encadeamento opcional, com a?.b?.c
+- Usando unwrapping incondicional
+  
+### Optional force unwrapping:
+"Forçar a desembrulhar" é a forma explicita de extrair o valor de um Optional. Ele pode ser usado, por exemplo, em um parâmetro de uma função que não pode ser nil.
 
-### Optional Chaining: 
+#### Critérios da optional force unwrapping:
+- Ter certeza de que o valor está definido
+- Tratar a exceção que será lançada caso o valor seja nil
 
-- O encadeamento opcional é um processo para consultar e chamar propriedades, métodos e subscripts em um opcional que pode ser nulo. 
+### Optional binding opcional com if let
+Pode ser traduzido como "amarração opcional", consiste em garantir que um trecho de código será executado apenas se um determinado valor não for nil. Inclusive, é possível verificar sub-condições, como atributos de objetos.
+Além do if let, podemos usar também o guard let, que valida se uma variável tem valor e, caso não tenha, executa um trecho de código que deve encerrar a execução, seja do programa ou de uma função.
+
+### Optional unwrapping implícito
+Pode ser traduzido como "desembrulhamento" implícito, é usado para evitar ter que usar as outras abordagens citadas nesse artigo para obter o valor de uma variável Optional.
+
+
+### Optional Chaining/Encadeamento opcional: 
+
+- O encadeamento opcional é um processo para consultar e chamar propriedades, métodos e subscripts em um opcional que pode ser nulo.
+- Optional chaining, que pode ser traduzido como "encadeamento opcional", é usado, por exemplo, quando se tem atributos de objetos que podem ser nulos, e esses objetos também tem atributos que podem ser nulos.
+
+### Optional incondicional
+Pode ser traduzido como "desembrulhamento incondicional", é usado quando você tem certeza de que um Optional contém um valor.
 
 ## Controle de fluxo: 
 - Use if e switch para fazer condicionais. 
@@ -550,6 +582,11 @@ Uma árvore binária T é um conjunto (finito) de nós, tal que:
 | `Closure containing a declaration cannot be used with result builder 'ViewBuilder'` | Ocorre porque você tem funções declaradas dentro do body da View ExpensesView. No SwiftUI, as funções internas com declarações de variáveis não podem ser usadas dentro do ViewBuilder.| Pode mover o código da função filterExpenses para fora da closure do ViewBuilder, deixando apenas a chamada da função dentro da closure. |
 |`The compiler is unable to type-check this expression in reasonable time`| Pode ocorrer quando o compilador do Swift não consegue processar uma expressão complexa dentro de um tempo aceitável. Isso pode ser causado por expressões longas ou pelo uso de estruturas de dados e métodos que exigem uma verificação de tipos mais demorada. | É recomendável dividir o código em partes menores e mais gerenciáveis, ajudando o compilador a processar o código mais facilmente. |
 
+# Formas de fazer comentários no código:
+
+| Forma | Explicação | 
+| // | Comentário de uma única linha.|
+| /*...*/ | Comentário de múltiplas linhas |
 
 # Curiosidades
 
